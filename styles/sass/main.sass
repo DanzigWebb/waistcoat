@@ -303,9 +303,12 @@ form
         font-size: 36px
 .block6__item
   img
-    width: 120px
+    height: 100px
+    width: auto
     margin-left: 20%
     margin-bottom: -40px
+    @media (max-width: 992px)
+      margin-bottom: 0
 .block6__txt-content
   display: flex
   align-items: flex-end
@@ -320,3 +323,98 @@ form
   max-width: 260px
   margin-left: 20px
     
+.sect7
+  .heading
+    span
+      display: inline
+
+.swiper-slide
+  padding: 20px
+  box-sizing: border-box
+  
+.slide-content
+  filter: drop-shadow(0px 10px 30px rgba(130,146,178,0.2))
+  box-shadow: 0px 8px 8px 2px rgba(0, 0, 0, 0.04)
+  padding: 20px
+  position: relative
+  min-height: 250px
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    left: 10px
+    top: 10px
+    right: 10px
+    bottom: 10px
+    border-radius: 8px
+    border: 1px solid #eff2f5
+    z-index: -1
+.slide__header
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  .avatar
+    width: 85px
+    margin-right: 25px
+.slider__meta-user
+  display: flex
+  flex-direction: column
+  .name
+    font-size: 16px
+    font-weight: bold
+  .age
+    color: #a0a0a0
+.slider__info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  @media (max-width: 992px)
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+  .stars
+    width: 90px
+    margin-left: auto
+    @media (max-width: 992px)
+      margin-left: 0
+  img
+    flex-shrink: 0
+
+.reviews__control
+  display: flex
+  justify-content: space-between
+  align-items: center
+.button-wrap
+  width: 160px
+  display: flex
+  filter: drop-shadow(0px 5px 15px rgba(130,146,178,0.3))
+  margin: 10px 0
+.reviews__control
+  outline: none
+  cursor: pointer
+.pagination-wrap
+  .swiper-pagination-bullet
+    width: 14px
+    height: 14px
+    border-radius: 50%
+    border: 2px solid $accent
+    background-color: transparent
+    margin: 0 1px
+    &-active
+      background-color: $accent
+
+.offer
+  .heading
+    h2
+      span
+        display: inline
+  .block1-form
+    max-width: 320px
+    margin-top: 60px
+    padding-left: 0
+    @media (max-width: 576px)
+      margin: 0
+      margin-bottom: 25px
+  .block-form__content
+    padding: 26px
