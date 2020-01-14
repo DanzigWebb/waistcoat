@@ -228,7 +228,9 @@ form
       text-transform: uppercase
       span
         display: inline
-
+.block4__content
+  @media (max-width: 992px)
+    flex-direction: column-reverse
 .block4-scheme
   border-radius: 8px
   position: relative
@@ -293,7 +295,7 @@ form
   background-image: url(../../img/block6_bg.png)
   background-size: cover
   @media (max-width: 576px)
-    padding-top: 120px
+    padding-top: 0
   .heading
     margin-bottom: 60px
     h2
@@ -418,3 +420,14 @@ form
       margin-bottom: 25px
   .block-form__content
     padding: 26px
+.footer
+  height: 120px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+.policy__bot
+  display: flex
+  flex-direction: column
+  a
+    color: $accent
